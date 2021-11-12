@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Accordion Content Fragment">
+    <content jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured">
+                <items jcr:primaryType="nt:unstructured">
+                    <accordionItems jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <fragmentPath
+                                                granite:hide="${cqDesign.disableSelection}"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:orderBefore="accordionItems"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                emptyText="Enter or select Content Fragment"
+                                                fieldDescription="Path to the Content Fragment to display."
+                                                fieldLabel="Content Fragment"
+                                                name="./fragmentPath"
+                                                pickerTitle="Select Content Fragment"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </accordionItems>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
